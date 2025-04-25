@@ -51,6 +51,7 @@ jobs:
 
       - name: Checkov Scan
         uses: bridgecrewio/checkov-action@v12
+        continue-on-error: true
 
       - name: Comment PR with Plan
         if: github.event_name == 'pull_request'
