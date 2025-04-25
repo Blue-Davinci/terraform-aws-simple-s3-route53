@@ -178,7 +178,7 @@ resource "aws_cloudfront_distribution" "site" {
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = "S3Origin"
 
-    
+
 
     forwarded_values {
       query_string = false
