@@ -73,7 +73,7 @@ jobs:
             })
 
       - name: Upload Terraform Plan as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: tf-plan
           path: plan.txt
