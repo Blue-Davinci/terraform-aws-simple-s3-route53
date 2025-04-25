@@ -48,6 +48,8 @@ jobs:
       - name: Terraform Plan
         id: plan
         run: terraform plan -no-color
+        env:
+            TF_VAR_domain_name: ${{secrets.TF_VAR_DOMAIN_NAME}}
 
       - name: Checkov Scan
         uses: bridgecrewio/checkov-action@v12
